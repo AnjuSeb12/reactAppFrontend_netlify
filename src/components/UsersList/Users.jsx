@@ -4,6 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import instance from '../../axios';
 import Delete from '../Delete/Delete';
+import './Users.css';
 
 
 
@@ -42,20 +43,20 @@ function Users() {
             <Table striped bordered hover>
                 <thead>
                     <tr>
-                        <th>#</th>
-                        <th>Full Name</th>
-                        <th>Email</th>
-                        <th>Delete</th>
+                        <th className='colorWhite'>#</th>
+                        <th className='colorWhite'>Full Name</th>
+                        <th className='colorWhite'>Email</th>
+                        <th className='colorWhite'>Delete</th>
 
                     </tr>
                 </thead>
                 <tbody>
                     {users && users.map((user, index) => (
                         <tr key={index}>
-                            <td>{index + 1}</td>
-                            <td>{user.fullname}</td>
-                            <td>{user.email}</td>
-                            <td><Delete id={user._id}/></td>
+                            <td className='colorWhite'>{index + 1}</td>
+                            <td className='colorWhite'>{user.fullname}</td>
+                            <td className='colorWhite'>{user.email}</td>
+                            <td className='colorWhite'><Delete id={user._id}/></td>
                           
                           
                         </tr>

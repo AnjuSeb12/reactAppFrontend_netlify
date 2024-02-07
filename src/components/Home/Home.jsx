@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Col, Container, Row,Button } from 'react-bootstrap'
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import "./Home.css";
 
 function Home() {
     const smartwatch=useSelector((state) => state.data.smarts);
@@ -10,7 +11,7 @@ function Home() {
    
  <Row>
      {smartwatch && smartwatch.map((res,index) => (
-      <Col md={4} className='mt-3' key={index}>
+      <Col md={4} className='mt-3 mb-3 padding' key={index}>
       <Card >
       <Card.Img variant="top" src={process.env.REACT_APP_SERVER_URL+res.photograph} />
       <Card.Body>

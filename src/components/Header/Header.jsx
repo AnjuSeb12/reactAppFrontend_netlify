@@ -27,7 +27,7 @@ function Header() {
 
   }
   return (
-    <Navbar expand="lg" className="bg-dark">
+    <Navbar expand="lg" className="bg-dark " >
       <Container>
         <Navbar.Brand as={Link} to="/">Branded Watches</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

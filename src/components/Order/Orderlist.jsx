@@ -40,28 +40,28 @@ function Orderlist() {
     <ToastContainer position='top-center'/>
     <Row>
         <Col className='mt-3 mb-3'>
-            <Table striped bordered hover>
-                <thead>
+            <Table striped bordered hover >
+                <thead >
                     <tr >
                         <th className='colorWhite'>#</th>
-                        <th>Product Name</th>
-                        <th>Full Name</th>
-                        <th>Address</th>
-                        <th>Phone No</th>
-                        <th>Delete</th>
+                        <th className='colorWhite' >Product Name</th>
+                        <th className='colorWhite'>Full Name</th>
+                        <th className='colorWhite'>Address</th>
+                        <th className='colorWhite'>Phone No</th>
+                        <th className='colorWhite'>Delete</th>
 
                     </tr>
                 </thead>
                 <tbody>
                     {orders && orders.map((order, index) => (
                         <tr key={index}>
-                            <td>{index + 1}</td>
-                            <td>{order.productname}</td>
-                            <td>{order.fullname}</td>
-                            <td>{order.address}</td>
-                            <td>{order.number}</td>
+                            <td className='colorWhite'>{index + 1}</td>
+                            <td className='colorWhite'>{order.productname}</td>
+                            <td className='colorWhite'>{order.fullname}</td>
+                            <td className='colorWhite'>{order.address}</td>
+                            <td className='colorWhite'>{order.number}</td>
                            
-                            <td><OrderDelete id={order._id}/></td>
+                            <td className='colorWhite'><OrderDelete id={order._id}/></td>
                           
                         </tr>
 

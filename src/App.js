@@ -68,7 +68,6 @@ function App() {
     <Route path="/signup" element={ <Signup/>}/>
     <Route path="/login" element={ <Login/>}/>
     <Route path="/details/:id" element={ <Details/>}/>
-    <Route path="/buynow/:id" element={ <Buynow/>}/>
     <Route path="/admin" element={ <Admin/>}/>
   
   
@@ -78,6 +77,7 @@ function App() {
     <Route path="/add" element={ <ProtectedRoute isAuthenticated={isAuthenticated}><Add/></ProtectedRoute>}/>
     <Route path="/users" element={ <ProtectedRoute isAuthenticated={isAuthenticated}><Users/></ProtectedRoute>}/>
     <Route path="/order" element={ <ProtectedRoute isAuthenticated={isAuthenticated}><Orderlist/></ProtectedRoute>}/>
+    <Route path="/buynow/:id" element={ <ProtectedRoute isAuthenticated={isAuthenticated}><Buynow/></ProtectedRoute>}/>
 
     {/* <Route path="/buynow" element={ <ProtectedRoute isAuthenticated={isAuthenticated}><Buynow/></ProtectedRoute>}/> */}
     </Routes>
