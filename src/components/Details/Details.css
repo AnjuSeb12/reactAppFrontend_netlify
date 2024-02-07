@@ -1,0 +1,20 @@
+.imageSize{
+    height:600px !important;
+    max-width:100% !important;
+}
+.button a{
+    text-decoration: none !important;
+    color: white !important;
+}
+.button{
+    margin-left: 500px;
+    
+}
+.button:hover{
+    background-color: white !important;
+ 
+}
+.button a:hover{
+    color: black !important;
+    font-weight: bold;
+}
