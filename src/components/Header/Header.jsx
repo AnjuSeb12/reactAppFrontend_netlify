@@ -29,7 +29,7 @@ function Header() {
   return (
     <Navbar expand="lg" className="bg-dark " >
       <Container>
-        <Navbar.Brand as={Link} to="/">Branded Watches</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/">TimeStore</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -58,7 +58,7 @@ function Header() {
           </Nav>
           <Nav className='ms-auto'>
             {isAuthenticated ? <Button onClick={handleLogout} >Logout</Button> : <Nav.Link as={Link} to="/login"><Button>Login</Button></Nav.Link>}
-            <Nav.Link as={Link} to="/signup"><Button>SignUp</Button></Nav.Link>
+            <Nav.Link as={Link} to="/signup"><Button className='signupPadding'>SignUp</Button></Nav.Link>
 
 
 

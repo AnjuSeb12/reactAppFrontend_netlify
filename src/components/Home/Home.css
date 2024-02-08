@@ -1,6 +1,11 @@
-/* .height{
-    height: 600px !important;
-} */
+.height{
+    height: 700px !important;
+}
 .padding{
     padding-bottom: 30px !important;
 }
+@media only screen and (max-width: 767px) {
+    .height{
+        height: 800px !important;
+    }
+  }

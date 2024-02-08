@@ -12,7 +12,7 @@ function Home() {
  <Row>
      {smartwatch && smartwatch.map((res,index) => (
       <Col md={4} className='mt-3 mb-3 padding' key={index}>
-      <Card >
+      <Card className='height' >
       <Card.Img variant="top" src={process.env.REACT_APP_SERVER_URL+res.photograph} />
       <Card.Body>
         <Card.Title>{res.name}</Card.Title>
